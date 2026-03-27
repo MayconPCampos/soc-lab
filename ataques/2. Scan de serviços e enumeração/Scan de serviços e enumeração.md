@@ -76,10 +76,10 @@ A regra ET SCAN não foi acionada por baixo volume ou perfil comportamental.
 #### Segundo comando:
 Foi identificado o seguinte alerta no Suricata (interface WAN):<br>
 
-- ET SCAN Potential SSH Scan
-- Classification: Attempted Information Leak
-- Priority: 2
-- 192.168.240.132 -> 192.168.1.102:22
+- ``ET SCAN Potential SSH Scan``
+- ``Classification: Attempted Information Leak``
+- ``Priority: 2``
+- ``192.168.240.132 -> 192.168.1.102:22``
 
 Esse alerta indica tentativa de coleta de informações detalhadas do serviço SSH.
 
