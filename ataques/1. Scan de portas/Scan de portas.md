@@ -38,7 +38,7 @@ Imagens/Kali-nmap.png
 O Nmap identificou a porta 22/tcp (ssh) como aberta e as outras 999 portas como filtered, o que indica que o firewall bloqueou ou descartou silenciosamente.
 
 Evidências:
-Imagens/kali-nmap-resultado.png
+[kali-nmap](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/1.%20Scan%20de%20portas/imagens/kali-nmap.png)
 
 ## 5. Detecção:
 
@@ -54,7 +54,7 @@ Estes alertas indicam tentativas sequenciais e com padrão de mapeamento em port
 Como o scan foi realizado utilizando técnica half-open (SYN Scan), não houve conclusão do handshake TCP nas portas não abertas, portanto não foram gerados logs no sistema operacional do Ubuntu.
 
 Evidências:
-Imagens/suricata-alert-logs.png.
+[suricata-alerts.log](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/1.%20Scan%20de%20portas/imagens/Suricata-alerts.log.png)
 
 ## 6. Análise técnica:
 O ataque teve origem em uma rede externa e seguiu um padrão que o caracteriza como port scan, o Suricata detectou o comportamento na interface WAN antes do roteamento interno. O único serviço identificado como aberto foi o SSH (22/tcp), não houve tentativa de autenticação.
