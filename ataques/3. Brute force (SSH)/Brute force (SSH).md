@@ -18,7 +18,7 @@ O laboratório é composto por:<br>
 - Windows 10 (acesso aos dashboards do pfSense e Wazuh)<br>
 
 Diagrama da topologia:
-Arquitetura/Topologia do Laboratório.png
+[Topologia](https://github.com/MayconPCampos/soc-lab/blob/main/arquitetura%20da%20rede/Topologia%20da%20rede%20-%20laborat%C3%B3rio%20SOC.png)
 
 ## 3. Execução do Ataque
 
