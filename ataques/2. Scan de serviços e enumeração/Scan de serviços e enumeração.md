@@ -21,14 +21,11 @@ Diagrama da topologia:
 ``nmap -sV -p 22 --version-intensity 5 192.168.1.102``
 
 Descrição:<br>
-``-sV →`` Detecção de versão do serviço<br>
-``-p 22 →`` Scan direcionado apenas à porta SSH<br>
+``-sV`` → Detecção de versão do serviço<br>
+``-p 22`` → Scan direcionado apenas à porta SSH<br>
 ``--version-intensity 5`` → Intensidade média de fingerprinting de versão<br>
 
 Objetivo: Identificar versão exata do serviço SSH exposto.
-
-Evidências:
-Imagens/kali.png
 
 #### Segundo comando executado no Kali linux:<br>
 
@@ -39,9 +36,6 @@ Descrição:<br>
 ``ssh2-enum-algos`` → Enumeração dos algoritmos suportados pelo SSH (KEX, MAC, cifragem, etc.)<br>
 
 Objetivo: Enumerar detalhes criptográficos e configurações do serviço SSH.
-
-Evidências:
-Imagens/kali.png
 
 ## 4. Resultado:
 
