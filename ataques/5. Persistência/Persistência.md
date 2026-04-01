@@ -83,36 +83,36 @@ Resultado:
 
 O Wazuh registrou diversos eventos durante a execução do teste:<br>
 
-Criação de arquivo no sistema:<br>
+Criação de arquivo no sistema;<br>
 ``Rule ID : 554
 File added to the system``
 
 Indica criação do script malicioso ou arquivo de persistência.
 
-Alteração de integridade de arquivos <br>
+Alteração de integridade de arquivos; <br>
 ``Rule ID: 550
 Integrity checksum changed``
 
-Detectou modificações em arquivos monitorados, incluindo:<br>
+Detectou modificações em arquivos monitorados, incluindo;<br>
 ``/opt/backdoor.sh``<br>
 ``/etc/cron.d/backdoor``
 
-Uso de privilégios administrativos<br>
+Uso de privilégios administrativos;<br>
 ``Rule ID: 5402
 Successful sudo to ROOT executed``
 
-Sessões de autenticação<br>
+Sessões de autenticação;<br>
 ``Rule IDs:
 • 5501 → Login session opened
 • 5502 → Login session closed``
 
-Autenticação SSH bem-sucedida<br>
+Autenticação SSH bem-sucedida;<br>
 ``Rule ID: 5715
 sshd: authentication success``
 
 ## 6. Análise Técnica:
 
-O ataque simulou uma técnica clássica de persistência em ambientes Linux através do uso de cron jobs maliciosos.
+O ataque simulou uma persistência em ambientes Linux através do uso de cron jobs maliciosos.
 
 O atacante:
 - Obteve acesso via SSH (credenciais válidas)
@@ -126,11 +126,6 @@ O Wazuh detectou:
 - alterações de integridade
 - uso de sudo
 - sessões de login
-
-Esse tipo de persistência é comum porque:
-- é simples de implementar
-- executa automaticamente
-- pode passar despercebido sem monitoramento adequado
 
 ## 7. Mapeamento MITRE ATT&CK
 
@@ -147,11 +142,6 @@ Técnicas:<br>
 ## 8. Conclusão:
 
 O teste demonstrou a criação de um mecanismo de persistência funcional em ambiente Linux utilizando cron jobs.
-
-O Wazuh foi capaz de detectar:
-- criação de arquivos suspeitos
-- alterações de integridade
-- execução de comandos com privilégio elevado
 
 A execução contínua do script confirma a eficácia da técnica de persistência.<br>
 O teste reforça a importância do monitoramento de integridade de arquivos e da análise de eventos de sistema para identificação de atividades maliciosas após comprometimento.
