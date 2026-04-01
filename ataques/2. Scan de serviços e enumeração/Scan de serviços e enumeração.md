@@ -65,7 +65,7 @@ Não foram identificados alertas no Suricata relacionados ao version scan.<br>
 
 Possível explicação:<br>
 O tráfego gerado foi compatível com handshake legítimo SSH, não houve padrão de varredura em múltiplas portas ou
-A regra ET SCAN não foi acionada por baixo volume ou perfil comportamental.
+a regra ET SCAN não foi acionada por baixo volume ou perfil comportamental.
 
 #### Segundo comando:
 Foi identificado o seguinte alerta no Suricata (interface WAN):<br>
@@ -84,9 +84,9 @@ O primeiro comando caracterizou-se como detecção ativa de versão (service fin
 O segundo comando executou scripts NSE voltados à enumeração detalhada do serviço, gerando padrões de requisição adicionais que acionaram regra da categoria ET SCAN.
 
 A atividade caracteriza:
--Reconhecimento direcionado
--Enumeração ativa de serviço
--Coleta de informações técnicas para potencial exploração futura
+- Reconhecimento direcionado
+- Enumeração ativa de serviço
+- Coleta de informações técnicas para potencial exploração futura
 
 Não houve tentativa de autenticação ou exploração identificada.
 
