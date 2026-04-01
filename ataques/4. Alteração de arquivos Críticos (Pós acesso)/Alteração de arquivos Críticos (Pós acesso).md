@@ -63,9 +63,11 @@ Durante a execução do teste foram registrados eventos no Wazuh Dashboard relac
 
 #### Principais eventos identificados:
 
-``Rule ID 5715: sshd: authentication success`` -> Autenticação SSH bem-sucedida<br>
+Autenticação SSH bem-sucedida<br>
+``Rule ID 5715: sshd: authentication success``
 
-``Rule ID 5402: Successful sudo to ROOT executed`` -> Uso de privilégios administrativos<br>
+Uso de privilégios administrativos<br>
+``Rule ID 5402: Successful sudo to ROOT executed``
 
 Sessões PAM<br>
 ``Rule ID 5501: PAM: Login session opened``
