@@ -144,4 +144,5 @@ Técnicas:<br>
 O teste demonstrou a criação de um mecanismo de persistência funcional em ambiente Linux utilizando cron jobs.
 
 A execução contínua do script confirma a eficácia da técnica de persistência.<br>
+
 O teste reforça a importância do monitoramento de integridade de arquivos e da análise de eventos de sistema para identificação de atividades maliciosas após comprometimento.
