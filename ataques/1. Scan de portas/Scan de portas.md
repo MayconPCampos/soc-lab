@@ -21,7 +21,7 @@ Comando executado no Kali Linux:<br>
 
 Descrição:
 
-``-sS -> SYN Scan (half-open scan)`` -> realiza varredura sem completar o handshake TCP, reduzindo registros no host alvo
+``-sS ``-> SYN Scan (half-open scan) -> realiza varredura sem completar o handshake TCP, reduzindo registros no host alvo
 
 ``-T4`` -> Timing agressivo, usado para facilitar a detecção no Suricata para gerar as evidências do teste.
 
@@ -29,9 +29,6 @@ Descrição:
 
 #### Objetivo: 
 Identificar os serviços expostos e mapear a superfície de ataque.
-
-Evidências:
-Imagens/Kali-nmap.png
 
 ## 4. Resultado:
 
