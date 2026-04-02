@@ -50,6 +50,12 @@ Conteúdo do cron:
 
 Esse agendamento executa o script a cada minuto com privilégios de root.
 
+Evidências:<br>
+[Kali](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/persist%C3%AAncia/imagens/kali.png)<br>
+[Cron](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/persist%C3%AAncia/imagens/cron.png)<br>
+[Script malicioso](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/persist%C3%AAncia/imagens/kali%20script%20malicioso.png)<br>
+[Removendo a persistência após o teste](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/persist%C3%AAncia/imagens/Ubuntu-removendo%20persistencia.png)
+
 ## 4. Resultado:
 
 Após a criação da persistência, foi possível verificar a execução contínua do script através do arquivo de log:
@@ -78,6 +84,10 @@ Verificação:
 Resultado:
 
 ``e2scrub_all sysstat``
+
+Evidências:<br>
+[Logs](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/persist%C3%AAncia/imagens/Ubuntu%20-%20persistencia%20logs.png)<br>
+
 
 ## 5. Detecção:
 
@@ -109,6 +119,10 @@ Sessões de autenticação;<br>
 Autenticação SSH bem-sucedida;<br>
 ``Rule ID: 5715
 sshd: authentication success``
+
+Evidências:<br>
+[Wazuh dashboard 1](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/persist%C3%AAncia/imagens/wazuh%20dashboadr%201.png)<br>
+[Wazuh dashboard 2](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/persist%C3%AAncia/imagens/wazuh%20dashboard%202.png)<br>
 
 ## 6. Análise Técnica:
 
