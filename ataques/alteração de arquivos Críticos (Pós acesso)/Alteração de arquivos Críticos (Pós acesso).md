@@ -13,7 +13,7 @@ O laboratório é composto por:
 - Ubuntu Server (SIEM com Wazuh Manager na rede interna)
 - Windows 10 (acesso aos dashboards do pfSense e Wazuh)
 
-Diagrama da topologia:
+Diagrama da topologia:<br>
 [Topologia](https://github.com/MayconPCampos/soc-lab/blob/main/arquitetura%20da%20rede/Topologia%20da%20rede%20-%20laborat%C3%B3rio%20SOC.png)
 
 ## 3. Execução do Ataque:
@@ -43,7 +43,8 @@ Resultado após modificações:
 ``/etc/passwd  -rwxrwxrwx``<br>
 ``/etc/shadow  -rw-rw-rw-``<br>
 
-Evidências: Imagens.png
+Evidências:<br>
+[Kali - alterações de permissões](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/altera%C3%A7%C3%A3o%20de%20arquivos%20Cr%C3%ADticos%20(P%C3%B3s%20acesso)/imagens/Kali-altera%C3%A7%C3%A3o%20de%20permiss%C3%B5es.png)
 
 ## 4. Resultado:
 
@@ -54,8 +55,8 @@ As permissões dos arquivos críticos foram alteradas com sucesso durante a sess
 
 Após a execução do teste as permissões foram restauradas para evitar impactos permanentes no ambiente de laboratório.
 
-Evidências:
-Imagens/alteracao-passwd-shadow.png
+Evidências:<br>
+[Restauração de permissões](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/altera%C3%A7%C3%A3o%20de%20arquivos%20Cr%C3%ADticos%20(P%C3%B3s%20acesso)/imagens/Ubuntu-restaurando%20permiss%C3%B5es.png)
 
 ## 5. Detecção:
 
@@ -75,6 +76,9 @@ Sessões PAM<br>
 
 Alteração de integridade de arquivos<br>
 ``Rule ID 550: Integrity checksum changed``
+
+Evidências:<br>
+[Wazuh dashboard](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/altera%C3%A7%C3%A3o%20de%20arquivos%20Cr%C3%ADticos%20(P%C3%B3s%20acesso)/imagens/Wazuh-detectada%20altera%C3%A7%C3%A3o.png)
 
 ## 6. Análise Técnica:
 
