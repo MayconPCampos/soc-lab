@@ -17,7 +17,7 @@ O laboratório é composto por:<br>
 - Ubuntu Server (SIEM com Wazuh Manager na rede interna)<br>
 - Windows 10 (acesso aos dashboards do pfSense e Wazuh)<br>
 
-Diagrama da topologia:
+Diagrama da topologia:<br>
 [Topologia](https://github.com/MayconPCampos/soc-lab/blob/main/arquitetura%20da%20rede/Topologia%20da%20rede%20-%20laborat%C3%B3rio%20SOC.png)
 
 ## 3. Execução do Ataque
@@ -43,8 +43,9 @@ O Hydra realizou tentativas de autenticação e obteve o seguinte resultado fina
 
 Apesar de nenhuma credencial válida ter sido encontrada durante o ataque, as múltiplas tentativas de autenticação foram registradas no sistema alvo.
 
-Evidências:
-Imagens/hydra-bruteforce.png
+Evidências:<br>
+[Kali - hydra](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/brute%20force%20(SSH)/imagens/Kali.png)<br>
+[Lista de senhas e logins](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/brute%20force%20(SSH)/imagens/Users%20and%20passwords.png)<br>
 
 ## 5. Detecção:
 
@@ -89,6 +90,12 @@ Principais regras acionadas:
 ``5712/SSH brute force attempt/10``
 
 A regra 5712 classificou explicitamente o evento como brute force attack.
+
+Evidências:<br>
+[Suricata](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/brute%20force%20(SSH)/imagens/Suricata-alerts.log.png)<br>
+[Auth.log](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/brute%20force%20(SSH)/imagens/Auth.logs.png)<br>
+[Wazuh dashboard 1](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/brute%20force%20(SSH)/imagens/Wazuh-1.png)<br>
+[Wazuh dashboard 2](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/brute%20force%20(SSH)/imagens/Wazuh-2.png)<br>
 
 ## 6. Análise Técnica:
 
