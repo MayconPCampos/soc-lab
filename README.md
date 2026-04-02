@@ -19,7 +19,7 @@ O objetivo é simular ataques reais em um ambiente controlado, analisando sua de
 
 ## Topologia do laboratório
 
-![Topologia](Arquitetura/Topologia do Laboratório.png)
+![Topologia](https://github.com/MayconPCampos/soc-lab/blob/main/arquitetura%20da%20rede/Topologia%20da%20rede%20-%20laborat%C3%B3rio%20SOC.png)
 
 ---
 
