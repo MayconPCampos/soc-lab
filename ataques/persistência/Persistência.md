@@ -18,7 +18,7 @@ O laboratório é composto por:
 - Ubuntu Server (SIEM com Wazuh Manager)
 - Windows 10 (acesso aos dashboards)<br>
 
-Diagrama da topologia:
+Diagrama da topologia:<br>
 [Topologia](https://github.com/MayconPCampos/soc-lab/blob/main/arquitetura%20da%20rede/Topologia%20da%20rede%20-%20laborat%C3%B3rio%20SOC.png)
 
 ## 3. Execução do Ataque:
