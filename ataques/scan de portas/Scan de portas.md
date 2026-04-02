@@ -11,7 +11,7 @@ O laboratório é composto por:
 - Ubuntu Server (SIEM com Wazuh Manager na rede interna)<br>
 - Windows 10 (acesso aos dashboards do pfSense e Wazuh)<br>
 
-Diagrama da topologia:
+Diagrama da topologia:<br>
 [Topologia](https://github.com/MayconPCampos/soc-lab/blob/main/arquitetura%20da%20rede/Topologia%20da%20rede%20-%20laborat%C3%B3rio%20SOC.png)
 
 ## 3. Execução do ataque:
@@ -34,7 +34,7 @@ Identificar os serviços expostos e mapear a superfície de ataque.
 
 O Nmap identificou a porta 22/tcp (ssh) como aberta e as outras 999 portas como filtered, o que indica que o firewall bloqueou ou descartou silenciosamente.
 
-Evidências:
+Evidências:<br>
 [kali-nmap](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/1.%20Scan%20de%20portas/imagens/kali-nmap.png)
 
 ## 5. Detecção:
@@ -50,7 +50,7 @@ O Suricata com IDS habilitado monitorando a interface WAN (Ponto de entrada do t
 Estes alertas indicam tentativas sequenciais e com padrão de mapeamento em portas associadas a serviços sensíveis,
 Como o scan foi realizado utilizando técnica half-open (SYN Scan), não houve conclusão do handshake TCP nas portas não abertas, portanto não foram gerados logs no sistema operacional do Ubuntu.
 
-Evidências:
+Evidências:<br>
 [suricata-alerts.log](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/1.%20Scan%20de%20portas/imagens/Suricata-alerts.log.png)
 
 ## 6. Análise técnica:
