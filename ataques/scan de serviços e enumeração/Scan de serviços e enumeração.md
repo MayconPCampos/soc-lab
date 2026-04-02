@@ -12,7 +12,7 @@ O laboratório é composto por:<br>
 - Ubuntu Server (SIEM com Wazuh Manager na rede interna)<br>
 - Windows 10 (acesso aos dashboards do pfSense e Wazuh)<br>
 
-Diagrama da topologia:
+Diagrama da topologia:<br>
 [Topologia](https://github.com/MayconPCampos/soc-lab/blob/main/arquitetura%20da%20rede/Topologia%20da%20rede%20-%20laborat%C3%B3rio%20SOC.png)
 
 ## 3. Execução do ataque:
@@ -58,6 +58,10 @@ No resultado do segundo comando foi possível enumerar:
 
 Essa informação permite ao atacante avaliar o uso de algoritmos fracos, possibilidade de downgrade criptográfico e vetores para exploração futura.
 
+Evidências:<br>
+[Kali - enumeração](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/scan%20de%20servi%C3%A7os%20e%20enumera%C3%A7%C3%A3o/imagens/Kali-enumera%C3%A7%C3%A3o.png)<br>
+[Kali - scan de serviços](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/scan%20de%20servi%C3%A7os%20e%20enumera%C3%A7%C3%A3o/imagens/Kali-scan%20de%20servi%C3%A7os.png)
+
 ## 5. Detecção:
 
 #### Primeiro comando:
@@ -76,6 +80,9 @@ Foi identificado o seguinte alerta no Suricata (interface WAN):<br>
 - ``192.168.240.132 -> 192.168.1.102:22``
 
 Esse alerta indica tentativa de coleta de informações detalhadas do serviço SSH.
+
+Evidências:<br>
+[Suricata - alerts.log](https://github.com/MayconPCampos/soc-lab/blob/main/ataques/scan%20de%20servi%C3%A7os%20e%20enumera%C3%A7%C3%A3o/imagens/Suricata-alerts.log.png)
 
 ## 6. Análise Técnica:
 
